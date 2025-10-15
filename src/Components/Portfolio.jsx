@@ -4,6 +4,7 @@ import '../CSS/Portfolio.css';
 import { MdEmail, MdPhoneAndroid, MdLocationOn, MdMenu, MdClose } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 
 const Portfolio = () => {
     const [activeSection, setActiveSection] = useState('home');
@@ -15,7 +16,7 @@ const Portfolio = () => {
 
     const sectionRefs = {
         home: homeRef,
-        about: aboutRef,
+        about : aboutRef,
         projects: projectsRef,
         contact: contactRef,
     };
@@ -131,6 +132,12 @@ const Portfolio = () => {
                                 <button className="btn btn-secondary" onClick={() => scrollToSection(contactRef)}>
                                     Get In Touch
                                 </button>
+                                <button className="btn btn-success download-btn">
+                                    <a href="/NagarajuKolar.pdf" download >
+                                        <FaDownload  className="download-icon"  />
+                                        Download Resume
+                                    </a>
+                                </button>
                             </div>
                         </div>
                         <div className="home-image">
@@ -149,7 +156,7 @@ const Portfolio = () => {
                             I graduated from VNR Vignanajyothi Institute of Engineering & Technology with a B.Tech in Information Technology,
                             achieving a CGPA of 8.0/10. I believe in writing clean, maintainable code and creating user experiences that
                             are both beautiful and functional. My expertise lies in building responsive, modern web applications using
-                            React.js and other cutting-edge technologies.I’m constantly exploring new tools and practices to enhance both 
+                            React.js and other cutting-edge technologies.I’m constantly exploring new tools and practices to enhance both
                             my skills and the projects I work on.
                         </p>
 

@@ -290,6 +290,49 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-success {
+    background: transparent;
+    border: 2px solid var(--accent-cyan);
+}
+
+.home-buttons .btn-success:hover {
+    background: var(--accent-cyan);
+    transform: translateY(-2px);
+}
+
+.home-buttons .btn-success a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.download-icon {
+    margin-right: 8px;
+    animation: blink 2s infinite;
+    color: white;
+}
+
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
 .home-image {
     position: relative;
 }
